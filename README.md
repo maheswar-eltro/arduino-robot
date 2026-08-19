@@ -7,14 +7,19 @@ Currently under construction
 ## Hardware 
 - Robot Chasis
 - Arduino Uno R3
-- DC geared motors
+- 2 DC geared motors
 - Battery / Power Supply
-- Wheels
-- Motor driver
+- 2 65mm Wheels
+- TB662 Motor driver
+- Wires
+- Bolts & Screws
+- Battery Pack
+- Switch Pin
+- Servo Motor
 
 ## Progress
 - [x] Git/GitHub repository setup
-- [ ] Chasis assembly
+- [x] Chasis assembly
 - [ ] Motor wiring
 - [ ] Motor driver setup
 - [ ] Gear setup
