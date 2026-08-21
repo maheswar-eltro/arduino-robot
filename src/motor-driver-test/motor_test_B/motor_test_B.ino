@@ -1,3 +1,4 @@
+// Motor B test through TB6612FNG
 const int BIN1 = 9;
 const int BIN2 = 10;
 const int PWMB = 11;
