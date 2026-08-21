@@ -1,4 +1,4 @@
-// TB6612FNG - Both Motors Test
+// Both motors test through TB6612FNG
 
 // Motor A (RIGHT)
 const int AIN1 = 5;
