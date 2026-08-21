@@ -2,15 +2,20 @@
 A custom built Arduino based robot.
 
 ## Project Status
-Currently under construction
+Currently under construction:
+- sorted connections
+- tested motor 
+- tested motor driver
+- tested basic movement code
+- assembled initial chassis
 
 ## Hardware 
 - Robot Chasis
-- Arduino Uno R3
+- Arduino Uno R4
 - 2 DC geared motors
-- Battery / Power Supply
+- 2 18650 Lithium Ion Battery
 - 2 65mm Wheels
-- TB662 Motor driver
+- TB6612FNG Motor driver
 - Wires
 - Bolts & Screws
 - Battery Pack
@@ -20,10 +25,10 @@ Currently under construction
 ## Progress
 - [x] Git/GitHub repository setup
 - [x] Chasis assembly
-- [ ] Motor wiring
-- [ ] Motor driver setup
-- [ ] Gear setup
-- [ ] Basic movement
+- [x] Motor wiring
+- [x] Motor driver setup
+- [x] Gear setup
+- [x] Basic movement
 - [ ] Remote control
 - [ ] Sensors
 - [ ] Servo setup
