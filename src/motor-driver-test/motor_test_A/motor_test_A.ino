@@ -1,3 +1,4 @@
+// Motor A test through TB6612FNG
 const int AIN1 = 5;
 const int AIN2 = 4;
 const int PWMA = 3;
