@@ -6,11 +6,11 @@ This document records the development of the robot from initial assembly to the 
 
 | Date | Milestone | Status |
 |---|---|---|
-| 2026-08-19 | Project repository created |  |
-| 2026-08-20 | Chassis assembled | (partly) |
-| — | Motors tested |  |
-| — | Motor driver tested |  |
-| — | Basic movement implemented |  |
+| 2026-08-19 | Project repository created | Done |
+| 2026-08-20 | Chassis assembled | (mechanical parts only) |
+| 2026-08-20 | Motors tested | Done |
+| 2026-08-21 | Motor driver tested | Done |
+| 2026-08-21 | Basic movement implemented | Only implemented Forward and Backward |
 | — | Remote control implemented |  |
 | — | Sensors integrated |  |
 | — | Autonomous movement |  |
@@ -24,4 +24,17 @@ This document records the development of the robot from initial assembly to the 
 - Initialized local Git repository.
 - Connected local repository to GitHub.
 - Created initial project documentation structure.
+
+### 2026-08-20 - Chassis Assemby
+
 - Chassis partly assembled by adding Gear Motors, Arduino, Battery Pack, Switch Pin.
+- Both motors tested
+
+### 2026-08-21 - Driver Test & Basic Movement Implementation
+
+- Motor A tested through TB6612FNG
+- Motor B tested through TB6612FNG
+- Both Motor A & Motor B tested through TB6612FNG
+- Assembled the Components to the Chassis ( Mini Breadboard, Arduino, Wirings, TB6612FNG and Power Bank as temporary Power Supply)
+- Tested Movement of Motors/Wheels
+- Implemented Front & Reverse for the Wheels
