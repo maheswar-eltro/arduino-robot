@@ -23,13 +23,13 @@ Currently under construction:
 - Servo Motor
 
 ## Progress
-- [x] Git/GitHub repository setup
-- [x] Chasis assembly
-- [x] Motor wiring
-- [x] Motor driver setup
-- [x] Gear setup
-- [x] Basic movement
-- [x] WASD movement
+- ✅ Git/GitHub repository setup
+- ✅ Chasis assembly
+- ✅ Motor wiring
+- ✅ Motor driver setup
+- ✅ Gear setup
+- ✅ Basic movement
+- ✅ WASD movement
 - [ ] Remote control
 - [ ] Sensors
 - [ ] Servo setup
