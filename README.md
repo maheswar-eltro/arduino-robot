@@ -29,7 +29,7 @@ Currently under construction:
 - [x] Motor driver setup
 - [x] Gear setup
 - [x] Basic movement
-- [ ] WASD movement
+- [x] WASD movement
 - [ ] Remote control
 - [ ] Sensors
 - [ ] Servo setup
