@@ -7,12 +7,12 @@ This document records the development of the robot from initial assembly to the 
 | Date | Milestone | Status |
 |---|---|---|
 | 2026-08-19 | Project repository created | Done |
-| 2026-08-20 | Chassis assembled | (mechanical parts only) |
+| 2026-08-20 | Chassis assembled | Done |
 | 2026-08-20 | Motors tested | Done |
 | 2026-08-21 | Motor driver tested | Done |
-| 2026-08-21 | Basic movement implemented | Only implemented Forward and Backward |
-| 2026-08-26 | Implemented all 4 directions |
-| 2026-08-26 | WASD keyboard control |
+| 2026-08-21 | Basic forward & backward movement implemented | Done|
+| 2026-08-26 | Implemented all 4 directions | Done |
+| 2026-08-26 | WASD keyboard control | Done |
 | — | Remote control implemented |  |
 | — | Sensors integrated |  |
 | — | Autonomous movement |  |
