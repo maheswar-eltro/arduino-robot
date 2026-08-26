@@ -23,17 +23,17 @@ Currently under construction:
 - Servo Motor
 
 ## Progress
-  ✅ Git/GitHub repository setup
-  ✅ Chasis assembly
-  ✅ Motor wiring
-  ✅ Motor driver setup
-  ✅ Gear setup
-  ✅ Basic movement
-  ✅ WASD movement
-  [ ] Remote control
-  [ ] Sensors
-  [ ] Servo setup
-  [ ] Autonomous
+- ✅ Git/GitHub repository setup
+- ✅ Chassis assembly
+- ✅ Motor wiring
+- ✅ Motor driver setup
+- ✅ Gear setup
+- ✅ Basic movement
+- ✅ WASD movement
+- [ ] Remote control
+- [ ] Sensors
+- [ ] Servo setup
+- [ ] Autonomous
 
 ## Documentation
 This repository will contain the codes, wiring diagrams, experiments, troubleshooting, notes and progress photos from the project.
