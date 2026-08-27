@@ -15,9 +15,9 @@ while True:
         command = 'a'
     elif keyboard.is_pressed('d'): 
         command = 'd'
-    elif keyboard.is_pressed('e'):
-        command = 'e'
 
     time.sleep(0.05)
 
     arduino.write(command.encode())
+
+

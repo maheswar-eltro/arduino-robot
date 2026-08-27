@@ -44,9 +44,6 @@ void loop() {
     else if (command == 'x') {
       stop();
     }
-    else if (command == 'e'){
-      spin();
-    }
   }
 }
 
@@ -102,14 +99,4 @@ void turn_right() {
 void stop() {
   analogWrite(PWMA, 0);
   analogWrite(PWMB, 0);
-}
-
-void spin() {
-  digitalWrite(AIN1, HIGH);
-  digitalWrite(AIN2, LOW);
-  analogWrite(PWMA, 150);
-
-  digitalWrite(BIN1, LOW);
-  digitalWrite(BIN2, HIGH);
-  analogWrite(PWMB, 255);
 }
