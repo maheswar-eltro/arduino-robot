@@ -48,3 +48,7 @@ This document records the development of the robot from initial assembly to the 
 - Added PWM compensation for motor speed difference
 - Implemented WASD keyboard control via Serial
 - Added Python keyboard controller with automatic stop
+
+### 2026-08-27 - Added Wiring & Notes
+- Notes added in documentation
+- Wiring/Pinout added in hardware
