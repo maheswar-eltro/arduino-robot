@@ -27,32 +27,18 @@ void setup() {
 void loop() {
   if (Serial.available()) {
 
-    char command = Serial.read();
+    int left = Serial.parseInt();
+    int right = Serial.parseInt();
 
-    if (command == 'w') {
-      move_front();
-    }
-    else if (command == 's') {
-      move_back();
-    }
-    else if (command == 'a') {
-      turn_left();
-    }
-    else if (command == 'd') {
-      turn_right();
-    }
-    else if (command == 'x') {
-      stop();
-    }
+    drive(left, right);
   }
 }
-
 
 void move_front (){
   digitalWrite(AIN1, HIGH);
   digitalWrite(AIN2, LOW);
   
-  analogWrite(PWMA, 130);
+  analogWrite(PWMA, 190);
 
   digitalWrite(BIN1, HIGH);
   digitalWrite(BIN2, LOW);
@@ -64,7 +50,7 @@ void move_back (){
   digitalWrite(AIN1, LOW);
   digitalWrite(AIN2, HIGH);
   
-  analogWrite(PWMA, 150);
+  analogWrite(PWMA, 190);
 
   digitalWrite(BIN1, LOW);
   digitalWrite(BIN2, HIGH);
@@ -76,19 +62,19 @@ void turn_left () {
   digitalWrite(AIN1, HIGH);
   digitalWrite(AIN2, LOW);
   
-  analogWrite(PWMA, 130);
+  analogWrite(PWMA, 190);
 
   digitalWrite(BIN1, LOW);
-  digitalWrite(BIN2, LOW);
+  digitalWrite(BIN2, HIGH);
   
-  analogWrite(PWMB, 0);
+  analogWrite(PWMB, 255);
 }
 
 void turn_right() {
   digitalWrite(AIN1, LOW);
-  digitalWrite(AIN2, LOW);
+  digitalWrite(AIN2, HIGH);
   
-  analogWrite(PWMA, 0);
+  analogWrite(PWMA, 190);
 
   digitalWrite(BIN1, HIGH);
   digitalWrite(BIN2, LOW);
@@ -100,3 +86,51 @@ void stop() {
   analogWrite(PWMA, 0);
   analogWrite(PWMB, 0);
 }
+
+
+void drive (int left , int right) {
+  if (left > 0) {
+    digitalWrite(BIN1, HIGH);
+    digitalWrite(BIN2, LOW);
+  } 
+  else if (left < 0) {
+    digitalWrite(BIN1, LOW);
+    digitalWrite(BIN2, HIGH);
+  }
+  else {
+    digitalWrite(BIN1, LOW);
+    digitalWrite(BIN2, LOW);
+  }
+
+  if (right > 0) {
+    digitalWrite(AIN1, HIGH);
+    digitalWrite(AIN2, LOW);
+  } 
+  else if (right < 0) {
+    digitalWrite(AIN1, LOW);
+    digitalWrite(AIN2, HIGH);
+  }
+  else {
+    digitalWrite(AIN1, LOW);
+    digitalWrite(AIN2, LOW);
+  }
+
+  left = abs(left);
+  right = abs(right);
+
+  right = constrain(right, 0, 255);
+  left = constrain(left, 0, 255);
+
+  analogWrite(PWMA, right);
+  analogWrite(PWMB, left);
+
+}
+
+
+
+
+
+
+
+
+
